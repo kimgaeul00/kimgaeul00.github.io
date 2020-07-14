@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+		{
+			padding: 0;
+			margin: 0;
+		}
+		li
+		{
+			list-style-type: none;
+		}
+		.clear 
+		{
+			clear: both;
+		}
+		#page
+		{
+			width: 1300px;
+			margin: auto;
+			border: 0px solid #bbbbbb;
+		}
+		header
+		{
+			width: 1300px;
+			height: 100px;
+			margin-top: 10px;
+			border-bottom: 1px solid #DFE3F1;
+		}
+		#logo
+		{
+			float: left;
+			margin-top: 10px;
+		}
+		#top
+		{
+			float: right;
+			margin: 30px 20px 0 0;
+			border: 0px solid #bbbbbb;
+		}
+
+		#div1
+		{
+			margin-top: 5px;
+			margin-right: 20px;
+			float: left;
+			font-size: 20px;
+		}
+		#div2
+		{
+			float: right;
+		}
+		input{
+			margin-top: 30px;
+			margin-left: 100px;
+			border: 2px solid #21A089;
+			width: 400px;
+			height: 40px;
+		}
+		nav
+		{
+			width: 1300px;
+			height: 70px;
+			margin-top: 10px;
+			border: 0px solid #bbbbbb;
+		}
+		span
+		{
+			font-weight: bold;
+			color: #21A089;
+		}
+		nav li
+		{
+			display: inline-block;
+			margin: 20px 30px;
+		}
+		section
+		{
+			float: right;
+			margin-top: 10px;
+			border: 0px solid #bbbbbb;
+			padding-bottom: 20px;
+		}
+		aside
+		{
+			float: left;
+			border: 0px solid #bbbbbb;
+			margin-top: 10px;
+			width: 300px;
+		}
+		#search{
+		position: absolute; 
+		margin-top: 30px;
+        width: 46px;
+        height: 46px;
+		}
+		#menu1
+		{
+			color: #4C4C4C;
+			border-bottom: 1px solid #DFE3F1;
+			padding-bottom: 25px;
+			font-size: 30px;
+			font-weight: normal;
+		}
+		#menu2
+		{ 
+			color: #FFFFFF;
+			background-color: #21A089;
+			font-size: 20px;
+			font-weight: normal;
+			padding: 15px;
+		}
+		#menu3
+		{
+			border-bottom: 1px solid #DFE3F1;
+			padding: 10px 0 20px 0;
+		}
+		#menu4
+		{
+			border-bottom: 1px solid #DFE3F1;
+			padding: 20px 0 20px 0;
+		}
+		#menu5
+		{
+			border-bottom: 1px solid #DFE3F1;
+			padding: 20px 0 20px 0;
+		}
+		#category
+		{
+			border-bottom: 1px solid #DFE3F1;
+			background-color: #F5F6FA
+			padding-left: 20px;
+			padding-bottom: 20px;
+		}
+		#category li
+		{
+			padding: 5px;
+			list-style-type: disc;
+		}
+		#main
+		{
+			width: 980px;
+			height: 300px;
+			border-bottom: 1px solid #DFE3F1;
+			
+			float:right;
+		}
+		#main1
+		{
+			color: #000000;
+			border-bottom: 2px solid #000000;
+			padding-bottom: 25px;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		#main2
+		{
+			float: left;
+		}
+		#main3
+		{
+			border: 0px solid #bbbbbb;
+			margin-top: 70px;
+		}
+
+		#list :hover{
+			border-color: #043763;
+			background-color: #043763;
+			color: #FFFFFF;
+		}
+		#list
+		{
+			display: inline-block;
+			border: 0px solid #bbbbbb;
+			width: 960px;
+			height: 300px;
+			float:right;
+			padding: 10px;
+		}
+		#list1
+		{
+			color: #414967;
+			margin-bottom: 10px;
+			margin-right: 10px;
+			margin-left: 20px;
+			display: inline-block;
+			text-align: center;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			border: 1px solid #414967;
+			width: 450px;
+		}
+		#list2
+		{
+			color: #414967;
+			margin-bottom: 10px;
+			margin-right: 10px;
+			display: inline-block;
+			text-align: center;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			border: 1px solid #414967;
+			width: 450px;
+		}
+		#list3
+		{
+			color: #414967;
+			margin-bottom: 10px;
+			margin-right: 10px;
+			margin-left: 20px;
+			display: inline-block;
+			text-align: center;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			border: 1px solid #414967;
+			width: 450px;
+		}
+		#list4
+		{
+			color: #414967;
+			margin-bottom: 10px;
+			margin-right: 10px;
+			display: inline-block;
+			text-align: center;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			border: 1px solid #414967;
+			width: 450px;
+		}
+		#list5
+		{
+			color: #414967;
+			margin-bottom: 10px;
+			margin-right: 10px;
+			margin-left: 20px;
+			text-align: center;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			border: 1px solid #414967;
+			width: 450px;
+		}
+		#line
+		{
+			text-decoration-line: underline;
+			color: #414967;
+		}
+		
+		</style>
+</style>
+</head>
+<body id="page">
+	<header>
+		<div id = "logo">
+			<a href="index.html">
+		<img src="./img/logo.JPG">
+	</a>
+	</div>
+	<input type="text" placeholder="검색어를 입력해주세요.">  <img id="search" src="./img/search.jpg">
+	<div id = "top">
+		<div id= "div1">
+			ENG
+		</div>
+
+		<div id="div2">
+			<img src="./img/icon.JPG" width="37">
+		</div>
+		
+	</header>
+
+	<div class="clear"></div>
+
+	<nav>
+		<ul>
+			<li> 감염병 </li>
+			<li> 건강정책 </li>
+			<li> 정책정보 </li>
+			<span>
+			<li> 연구개발 </li>
+			</span>
+			<li> 알림·자료</li>
+			<li> 간행물·통계</li>
+			<li> 민원·정보공개</li>
+			<li> 기관소개 </li>
+			<li> 사업별홈페이지 </li>
+		</ul>
+	</nav>
+
+	<div class="clear"></div>
+
+	<section>
+		<div id="main">
+			<div id="main1">
+				질병연구
+			</div>
+			<div id="main2">
+				<img src="./img/main2.JPG">
+			</div>
+			<div id="main3">
+				감염병과 만성병의 기전과 예방·치료·관리에 관한 연구와 환경과 유전 요인에 대한 분석연구를 바탕으로 국민 건강을 지킬 과학적 근거와 수단을 마련합니다.<br>
+				또한, 국가 보건의료 연구 인프라를 구축·운영을 통해 연구자원과 정보를 제공하여 질병극복과 보건의료의 발전의 기반을 마련하고 있습니다.
+			</div>
+		</div>
+	</section>
+	<aside>
+		<div id="menu1">
+		연구개발
+		</div>
+		<div id="menu2">
+			질병연구
+		</div>
+			<ul id="category">
+				<span>
+				<li>질병연구 </li>
+				</span>
+				<li>범부처감염병대응R&D</li>
+				<li>수시기술수요조사</li>
+			</ul>
+		<div id="menu3">
+			연구성과
+		</div>
+		<div id="menu4">
+			연구자원인프라
+		</div>
+		<div id="menu5">
+			국립보건연구원 바로가기
+		</div>
+	</aside>
+
+	<section>
+		<div id="list">
+			<div id="list1">
+				<span id="line">감염병연구</span> >
+			</div>
+			<div id="list2">
+				<span id="line">만성질환</span> >
+			</div>
+			<div id="list3">
+				<span id="line">유전체연구</span> >
+			</div>
+			<div id="list4">
+				<span id="line">한국인유전체역학조사사업</span> >
+			</div>
+			<div id="list5">
+				<span id="line">생명정보연구</span> >
+			</div>
+		</div>
+	</section>
+</body>
+</html>

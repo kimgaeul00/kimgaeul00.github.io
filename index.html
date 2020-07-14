@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+		}
+		li{
+			list-style-type: none;
+		}
+		.clear{
+			clear: both;
+		}
+		#page{
+			width: 1300px;
+			margin : auto;
+			border : 0px solid #bbbbbb;
+		}
+		header{
+			width: 1300px;
+			height: 100px;
+			margin-top: 10px;
+			border : 0px solid #dddddd;
+		}
+		nav{
+			width: 1300px;
+			height: 70px;
+			margin-top: 10px;
+			border: 0px solid #bbbbbb;
+		}
+		nav li{
+			display: inline-block;
+			margin: 20px 30px;
+		}
+		section{
+			float:left;
+			margin-top: 10px;
+			border: 0px solid #bbbbbb;
+			padding-bottom: 20px;
+		}
+		aside{
+			float: right;
+			border: 0px solid #bbbbbb;
+			margin-top: 10px;
+		}
+		aside ul {
+    	position: fixed;
+    	right: 0px;
+   		top: 300px;
+   		width: 70px;
+    	padding: 5px 5px 0 5px;
+    	border: 2px solid;
+		}
+		aside li {
+    text-align: center;
+    padding: 5px 0 10px 0;
+    border-bottom: 1px solid rgb(200,200,200);
+}
+		ul {
+    	display: block;
+    	list-style-type: disc;
+    	margin-block-start: 1em;
+    	margin-block-end: 1em;
+    	margin-inline-start: 0px;
+   		margin-inline-end: 0px;
+   	 	padding-inline-start: 40px;
+		}
+		footer{
+			float: left;
+			width: 1300px;
+			height: 100px;
+			margin: 10px 0 10px 0;
+			border : 0px solid #bbbbbb;
+		}
+		input{
+			margin-top: 30px;
+			margin-left: 60px;
+			border: 2px solid #21A089;
+			width: 400px;
+			height: 40px;
+		}
+		.li1 {
+    color: rgb(130,150,180);
+    font-weight: bold;
+}
+		.li2:hover {
+    background-color: rgb(50,80,120);
+    color: white;
+    font-weight: bold;
+}
+		#search{
+		position: absolute; 
+		margin-top: 30px;
+        width: 44px;
+        height: 44px;
+		}
+		#address{
+			float: left;
+			margin : 10px 0 0 10px;
+		}
+		#customer{
+			float: right;
+			margin : 10px 0 0 10px;
+		}
+		#logo{
+			float: left;
+			margin-top: 10px;
+		}
+		#top{
+			float: right;
+			margin: 40px 120px 0 0;
+		}
+		
+		#sub1{
+		}
+		#sub1 img:hover{
+			box-shadow: 5px 5px 10px gray;
+			transform: translate(5px, -5px);
+		}
+		#sub1 li{
+			display: inline-block;
+			text-align: center;
+			padding-right: 20px;
+		}
+		#sub2{}
+		#sub2 img{
+			width: 80px;
+			height: 80px;
+			border-radius: 50% 50%
+		}
+		#sub2 li{
+			display: inline-block;
+			padding-right: 20px;
+			text-align: center;
+			width: 160px;
+		}
+		#sub2 img:hover{
+			transform: scale(1.1);
+		}
+		#sub3{}
+		#sub3 li{
+			display: inline-block;
+			margin-right: 16px;
+			overflow: hidden;  
+		}
+		#sub3 img{
+			width: 250px;
+			height: 180px;
+			display: block;
+		}
+		#sub3 img:hover{
+			transform: scale(1.1);
+			transition: transform 1s;
+		}
+		#gg{
+			text-decoration: none;
+			color: black;
+		}
+		#dropdown1 {
+   		position: relative;
+   		display: inline-block;
+    	margin: 20px 30px;
+		}
+		.dropdown1 {
+    	position: absolute;
+    	margin-top: 38px;
+    	display: none;
+    	background-color: white;
+    	border: 1px solid gray;
+    	list-style: inline;
+    	width: 180px;
+		}		
+	.dropdown{
+		position: absolute;
+		display: none;
+		background-color: white;
+		border: 1px solid gray;
+		width: 180px;
+	}
+	.dropdown li{
+		display: block;
+		padding:10px 0 10px 10px;
+	}
+	#dropdown:hover .dropdown
+	{
+		display: block;
+	}
+	#dropdown1{
+		position: relative;
+		display: inline-block;
+		margin: 20px 30px;
+	}
+	.dropdown1{
+		position: absolute;
+		margin-top: 38px;
+		display: none;
+		background-color: white;
+		border: 1px solid gray;
+		list-style: inline;
+		width: 180px;
+	}
+	#dropdown1:hover{
+		color: rgb(65,160,140);
+		font-weight: bold;
+		border-bottom: 2px solid rgb(65,160,140);
+	}
+	#in1 {
+    padding: 10px;
+    position: relative;
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid rgb(200,200,200);
+    color: black;
+    font-weight: normal;
+	}
+	</style>
+</head>
+<body id="page">
+	<header>
+		<div id="logo">
+		<img src="./img/logo.JPG">
+	</div>
+
+	<input type="text" placeholder="검색어를 입력해주세요.">  <img id="search" src="./img/search.jpg">
+
+	<div id="top">
+		로그인 ㅣ 회원가입 ㅣ <span id="gg"><a href="./intro.html">마이페이지</a></span> ㅣ 고객센터
+	</div>
+	</header>
+	<div class="clear"></div>
+	<nav>
+		<li id="dropdown1">감염병</li>
+			<ul class="dropdown1">
+				<li id="ni1">감염병 정보 </li>
+				<li id="ni1">해외감염정보</li>
+				<li id="ni1">감염병유행정보</li>
+				<li id="ni1">결핵</li>
+				<li id="ni1">예방접종</li>
+				<li id="ni1">감염병간행물</li>
+			</ul>
+		</li>
+		<li id="dropdown1">건강정책</li>
+			<ul class="dropdown1">
+				<li id="ni1"> 손상정보 </li>
+				<li id="ni1"> 국가건강정보포털 </li>
+				<li id="ni1"> 희귀질환정보 </li>
+			</ul>
+		</li>
+		<li id="dropdown1">정책정보</li>
+			<ul class="dropdown1">
+				<li id="ni1"> 감염병 </li>
+				<li id="ni1"> 생물안전 </li>
+				<li id="ni1"> 만성질환 </li>
+				<li id="ni1"> 기후변화 </li>
+				<li id="ni1"> 의료방사선안전관리 </li>
+				<li id="ni1"> 장기,조직,혈액관리 </li>
+			</ul>
+		</li>
+		<li id="dropdown1"><a HREF="./link.html">연구개발</li></a>
+			<ul class="dropdown1">
+				<li id="ni1"> 질병연구 </li>
+				<li id="ni1"> 연구성과 </li>
+				<li id="ni1"> 연구자원인프라 </li>
+				<li id="ni1"> 생명윤리 </li>
+			</ul>
+		</li>
+		<li id="dropdown1">알림 자료</li>
+			<ul class="dropdown1">
+				<li id="ni1"> 이달의건강소식 </li>
+				<li id="ni1"> 보도자료 </li>
+				<li id="ni1"> 포토뉴스 </li>
+				<li id="ni1"> 홍보자료 </li>
+				<li id="ni1"> 공지사항 </li>
+				<li id="ni1"> 공고/공시 </li>
+				<li id="ni1"> 채용공고 </li>
+				<li id="ni1"> 법령,지침,서식 </li>
+			</ul>
+		</li>
+		<li id="dropdown1">간행물 통계</li>
+			<ul class="dropdown1">
+				<li id="in1"> 간행물 </li>
+				<li id="in1"> 통계 </li>
+				<li id="in1"> 연구성과 </li>
+			</ul>
+		</li>
+		<li id="dropdown1">민원정보 공개</li>
+			<ul class="dropdown1">
+				<li id="ni1"> 1399콜센터 </li>
+				<li id="ni1"> 민원신청 </li>
+				<li id="ni1"> 나의민원확인 </li>
+				<li id="ni1"> 생명윤리법관련민원안내 </li>
+				<li id="ni1"> 사전정보공표 </li>
+				<li id="ni1"> 정보공개청구 </li>
+				<li id="ni1"> 공공데이터 </li>
+				<li id="ni1"> 기관장업무추진비 </li>
+				<li id="ni1"> 공무국외여행보고서 </li>
+			</ul>
+		</li>
+		<li id="dropdown1">기관소개</li>
+			<ul class="dropdown1">
+				<li id="ni1"> 소개 </li>
+				<li id="ni1"> 비전과미션 </li>
+				<li id="ni1"> 핵심사업 </li>
+				<li id="ni1"> 연혁 </li>
+				<li id="ni1"> 조직,직원찾기 </li>
+				<li id="ni1"> 정부상징 </li>
+				<li id="in1"> 오시는길 </li>
+				<li id="in1"> 시설안내 </li>
+				<li id="in1"> 누리집이용안내 </li>
+			</ul>
+	</nav>
+	<div class="clear"></div>
+	<section>
+		<img src="./img/main.JPG" width="1080">
+	</section>
+	<aside>
+		<ul>
+			<li class="li1">사용자별맞춤메뉴</li>
+			<li class="li2">일반인</li>
+			<li class="li2">연구자</li>
+			<li class="li2">언론인</li>
+		</ul>
+	</aside>
+	<section>
+		<ul id="sub1">
+			<li>
+				<img src="./img/s1.JPG" width="250"><br> 온열질환 건강수치
+			</li>
+			<li>
+				<img src="./img/s2.JPG" width="250"><br> 비브리오폐혈증 예방수칙
+			</li>
+			<li>
+				<img src="./img/s3.JPG" width="250"><br> 미세먼지 건강수칙
+			</li>
+			<li>
+				<img src="./img/s4.JPG" width="250"><br> 코로나19 영상자료
+			</li>
+		</ul>
+	</section>
+	<section>
+		<ul id="sub2">
+			<li><img src="./img/ss1.JPG"><br>국가별 질병정보</li>
+			<li><img src="./img/ss2.JPG"><br>홍보자료</li>
+			<li><img src="./img/ss3.JPG"><br>이달의 건강정보</li>
+			<li><img src="./img/ss4.JPG"><br>조직도직원검색</li>JPG
+			<li><img src="./img/ss5.JPG"><br>법령.지침.서식</li>
+			<li><img src="./img/ss6.JPG"><br>공고/공시</li>
+		</ul>
+	</section>
+	<section id="sub3">
+		<li><img src="./img/t1.JPG"></li>
+		<li><img src="./img/t2.JPG"></li>
+		<li><img src="./img/t3.JPG"></li>
+		<li><img src="./img/t4.JPG"></li>
+	</section>
+	<footer>
+		<div id="address">
+			<img src="./img/address.JPG">
+		</div>
+		<div id="customer">
+			<img src="./img/customer.JPG">
+		</div>
+	</footer>
+</body>
+</html>
